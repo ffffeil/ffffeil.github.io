@@ -8,22 +8,22 @@
         <title>My New Hugo Site</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="My New Hugo Site" />
 <meta property="og:description" content="This is my cool site" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://ffffeil.github.io/" />
-<meta property="og:updated_time" content="2022-12-12T06:39:29-05:00" /><meta property="og:site_name" content="My cool site" />
+<meta property="og:url" content="http://example.org/" />
+<meta property="og:site_name" content="My cool site" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My New Hugo Site"/>
 <meta name="twitter:description" content="This is my cool site"/>
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://ffffeil.github.io/" /><link rel="alternate" href="/index.xml" type="application/rss+xml" title="My New Hugo Site">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/" /><link rel="alternate" href="/index.xml" type="application/rss+xml" title="My New Hugo Site">
     <link rel="feed" href="/index.xml" type="application/rss+xml" title="My New Hugo Site"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "WebSite",
-        "url": "https:\/\/ffffeil.github.io\/","inLanguage": "en","author": {
+        "url": "http:\/\/example.org\/","inLanguage": "en","author": {
                 "@type": "Person",
                 "name": "xxxx"
             },"description": "This is my cool site","name": "My New Hugo Site"
@@ -59,8 +59,18 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/first_post/">First_post</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-12-12">2022-12-12</time></span></div><div class="content">lf </div><div class="post-footer">
+        <a href="/posts/first_post/"></a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">linux笔记 bin:基础命令执行档 boot:引导装置器的静态链接文件 dev:设备档 etc:主机特定的系统配置 lib:基本共享库及基本内核模块 mnt:用于临时挂载一个文件系统 proc:系统信息的虚拟目录 root:根用户的活动目录 sbin:基本的系统级程序 tmp:临时文件 var:活动资料(可变数据) usr:第二层次(/bin/sbin/lib)用户程序 opt:附加的应用程序软件包 为了统一,linux每个发行版本都是用基本相同的目录配置方法,即遵循FHS(Filesystem Hiera
+linux进程管理和其他命令 进程的属性 进程表示pid 父进程 ppid
+ps aux查看所有进程的信息
+配合管道和grep命令 ps aux|grep ssh|grep -v grep|ssh
+top命令操作 top -p 1
+c+c中断 c+z调起 转入后台
+jobs查看处于后台的任务列表 fg命令 将后台任务恢复到前台运行 可以制定任务序列号 fg 4
+kill终止一个进程 sleep命令 sleep 6 等待几秒
+crontab 按照预设置的时间周期 重复执行用户的命令操作 周期性计划任务 crontab -e编辑 权限：将当前用户名添加到文件/etc/cron.allow中
+分钟 小时 日期 月份 （*）星期 命令（echo ‘hi’&gt;info.log） date用于显示时期和时间
+ 该范围内任意时间 ，间隔的多个不连续时间点   一个连续的时间范围 / 指定间隔的时间频率  linux用户和权限管理 chmod设置权限 root用户才能使用或这个文件的所有者 所以全面要用sudo 字符法 user，group，other，all chmod [-R][ugoa][+-=][rwx]文件或目录</div><div class="post-footer">
         <a href="/posts/first_post/">Read More</a></div>
 </article></div></div>
             </main><footer class="footer">

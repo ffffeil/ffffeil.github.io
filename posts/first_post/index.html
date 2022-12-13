@@ -4,31 +4,50 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>First_post - My New Hugo Site</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="First_post" />
-<meta property="og:description" content="lf " />
+        <title> - My New Hugo Site</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="" />
+<meta property="og:description" content="linux笔记 bin:基础命令执行档 boot:引导装置器的静态链接文件 dev:设备档 etc:主机特定的系统配置 lib:基本共享库及基本内核模块 mnt:用于临时挂载一个文件系统 proc:系统信息的虚拟目录 root:根用户的活动目录 sbin:基本的系统级程序 tmp:临时文件 var:活动资料(可变数据) usr:第二层次(/bin/sbin/lib)用户程序 opt:附加的应用程序软件包 为了统一,linux每个发行版本都是用基本相同的目录配置方法,即遵循FHS(Filesystem Hiera
+linux进程管理和其他命令 进程的属性 进程表示pid 父进程 ppid
+ps aux查看所有进程的信息
+配合管道和grep命令 ps aux|grep ssh|grep -v grep|ssh
+top命令操作 top -p 1
+c&#43;c中断 c&#43;z调起 转入后台
+jobs查看处于后台的任务列表 fg命令 将后台任务恢复到前台运行 可以制定任务序列号 fg 4
+kill终止一个进程 sleep命令 sleep 6 等待几秒
+crontab 按照预设置的时间周期 重复执行用户的命令操作 周期性计划任务 crontab -e编辑 权限：将当前用户名添加到文件/etc/cron.allow中
+分钟 小时 日期 月份 （*）星期 命令（echo ‘hi’&gt;info.log） date用于显示时期和时间
+ 该范围内任意时间 ，间隔的多个不连续时间点   一个连续的时间范围 / 指定间隔的时间频率  linux用户和权限管理 chmod设置权限 root用户才能使用或这个文件的所有者 所以全面要用sudo 字符法 user，group，other，all chmod [-R][ugoa][&#43;-=][rwx]文件或目录" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ffffeil.github.io/posts/first_post/" />
-<meta property="article:published_time" content="2022-12-12T06:39:29-05:00" />
-<meta property="article:modified_time" content="2022-12-12T06:39:29-05:00" /><meta property="og:site_name" content="My cool site" />
+<meta property="og:url" content="http://example.org/posts/first_post/" />
+<meta property="og:site_name" content="My cool site" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="First_post"/>
-<meta name="twitter:description" content="lf "/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="linux笔记 bin:基础命令执行档 boot:引导装置器的静态链接文件 dev:设备档 etc:主机特定的系统配置 lib:基本共享库及基本内核模块 mnt:用于临时挂载一个文件系统 proc:系统信息的虚拟目录 root:根用户的活动目录 sbin:基本的系统级程序 tmp:临时文件 var:活动资料(可变数据) usr:第二层次(/bin/sbin/lib)用户程序 opt:附加的应用程序软件包 为了统一,linux每个发行版本都是用基本相同的目录配置方法,即遵循FHS(Filesystem Hiera
+linux进程管理和其他命令 进程的属性 进程表示pid 父进程 ppid
+ps aux查看所有进程的信息
+配合管道和grep命令 ps aux|grep ssh|grep -v grep|ssh
+top命令操作 top -p 1
+c&#43;c中断 c&#43;z调起 转入后台
+jobs查看处于后台的任务列表 fg命令 将后台任务恢复到前台运行 可以制定任务序列号 fg 4
+kill终止一个进程 sleep命令 sleep 6 等待几秒
+crontab 按照预设置的时间周期 重复执行用户的命令操作 周期性计划任务 crontab -e编辑 权限：将当前用户名添加到文件/etc/cron.allow中
+分钟 小时 日期 月份 （*）星期 命令（echo ‘hi’&gt;info.log） date用于显示时期和时间
+ 该范围内任意时间 ，间隔的多个不连续时间点   一个连续的时间范围 / 指定间隔的时间频率  linux用户和权限管理 chmod设置权限 root用户才能使用或这个文件的所有者 所以全面要用sudo 字符法 user，group，other，all chmod [-R][ugoa][&#43;-=][rwx]文件或目录"/>
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://ffffeil.github.io/posts/first_post/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/first_post/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "First_post",
+        "headline": "",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/ffffeil.github.io\/posts\/first_post\/"
-        },"genre": "posts","wordcount":  1 ,
-        "url": "https:\/\/ffffeil.github.io\/posts\/first_post\/","datePublished": "2022-12-12T06:39:29-05:00","dateModified": "2022-12-12T06:39:29-05:00","publisher": {
+            "@id": "http:\/\/example.org\/posts\/first_post\/"
+        },"genre": "posts","wordcount":  262 ,
+        "url": "http:\/\/example.org\/posts\/first_post\/","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -67,10 +86,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">First_post</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX"></h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>xxxx</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-12">2022-12-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;One word&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="0001-01-01">0001-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;262 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -80,22 +99,140 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#lf">lf</a></li>
+        <li><a href="#linux进程管理和其他命令">linux进程管理和其他命令</a></li>
+        <li><a href="#linux用户和权限管理">linux用户和权限管理</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h3 id="lf">lf</h3>
+            </div><div class="content" id="content"><h1 id="linux笔记">linux笔记</h1>
+<p>bin:基础命令执行档 boot:引导装置器的静态链接文件 dev:设备档 etc:主机特定的系统配置 lib:基本共享库及基本内核模块 mnt:用于临时挂载一个文件系统 proc:系统信息的虚拟目录 root:根用户的活动目录 sbin:基本的系统级程序 tmp:临时文件 var:活动资料(可变数据) usr:第二层次(/bin/sbin/lib)用户程序 opt:附加的应用程序软件包 为了统一,linux每个发行版本都是用基本相同的目录配置方法,即遵循FHS(Filesystem Hiera</p>
+<h3 id="linux进程管理和其他命令">linux进程管理和其他命令</h3>
+<p>进程的属性
+进程表示pid
+父进程 ppid</p>
+<p>ps aux查看所有进程的信息</p>
+<p>配合管道和grep命令 ps aux|grep ssh|grep -v grep|ssh</p>
+<p>top命令操作
+top -p 1</p>
+<p>c+c中断
+c+z调起 转入后台</p>
+<p>jobs查看处于后台的任务列表
+fg命令 将后台任务恢复到前台运行 可以制定任务序列号 fg 4</p>
+<p>kill终止一个进程
+sleep命令 sleep 6 等待几秒</p>
+<p>crontab 按照预设置的时间周期 重复执行用户的命令操作 周期性计划任务
+crontab -e编辑    权限：将当前用户名添加到文件/etc/cron.allow中</p>
+<p>分钟 小时 日期 月份 （*）星期  命令（echo ‘hi’&gt;info.log）
+date用于显示时期和时间</p>
+<ul>
+<li>该范围内任意时间
+，间隔的多个不连续时间点</li>
+</ul>
+<ul>
+<li>一个连续的时间范围
+/ 指定间隔的时间频率</li>
+</ul>
+<p>linux用户和权限管理
+chmod设置权限  root用户才能使用或这个文件的所有者 所以全面要用sudo
+字符法 user，group，other，all
+chmod [-R][ugoa][+-=][rwx]文件或目录</p>
+<p>sudo chmod o-r /flag3
+o-r减少权限 o+r增加权限</p>
+<p>所属组 euler root 其他用户组</p>
+<p>/根目录
+home家目录</p>
+<p>etc目录存储用户信息</p>
+<p>文件系统命令</p>
+<p>i插入</p>
+<p>：wq 保存推出</p>
+<p>文件内容命令
+显示文件内容 链接文件内容
+cat
+cat a.txt
+cat a.txt b.txt</p>
+<p>显示制定文件的前若干行
+head -n 行数 文件
+head -n 3 /etc/passwd</p>
+<p>显示末尾
+tail -n 行数 文件
+可以不指定文件 自己定义文件 然后输出定义文件的后几行</p>
+<p>grep 正则表达式 全局搜索字符串
+在/etc/passwd中搜索包含xiang的行
+grep xiang /etc/passwd
+-i  忽略大小写
+-n  显示行号
+-r 递归搜索子目录(搜索目录下所有子目录）
+-v</p>
+<p>grep -i user /etc/passwd（忽略大小写搜索user）
+grip -irn network /etc/NetworkManager/ （多种并写）
+grep -v nologin /etc/passwd （搜索没有nologin）</p>
+<p>打包与解包
+-c 打包
+-v 列出打包接包详细过程
+-f 指定打包文件名称
+-z 以.gz格式
+-j 以.bz2
+-J .xz格式
+-x 解包
+f后面那个打包文件名</p>
+<p>tar打包
+tar -czvf 打包文件名.tar.gz 源文件或目录
+tar -cjvf           .tar.bz2
+tar -cJvf  	    .tar.xz</p>
+<p>tar -cjvf dir.tar.xz dir</p>
+<p>tar -czvf infos.tar.gz infos
+tar -cjvf infos.tar.bz2 infos
+tar -cJvf infos.tar.xz	infos</p>
+<p>zip打包
+zip -r dir.zip dir
+zip解包
+unzip dir.zip</p>
+<p>zip -r infos.zip infos</p>
+<p>ls -lh infos.*</p>
+<p>软连接
+ln -s</p>
+<p>硬链接</p>
+<p>源文件和硬链接同一个inod号
+ln硬链接
+ln a.txt c.txt</p>
+<p>软链接 源文件被删了 则无法访问
+硬链接中 （被指向文件）源文件被删则此处减一</p>
+<p>rm a.txt
+ls</p>
+<p>ls -l</p>
+<p>ln -a a.
+cat b.txt
+cat c.txt</p>
+<h3 id="linux用户和权限管理">linux用户和权限管理</h3>
+<p>chmod设置权限  root用户才能使用或这个文件的所有者 所以全面要用sudo
+字符法 user，group，other，all
+chmod [-R][ugoa][+-=][rwx]文件或目录</p>
+<p>sudo chmod o-r /flag3
+o-r减少权限 o+r增加权限</p>
+<p>所属组 euler root 其他用户组</p>
+<p>/根目录
+home家目录</p>
+<h1 id="大作业">大作业</h1>
+<p>大作业完成了要求的基本内容外，还完成了加分项2 部署到公网中，利用github管理自己的代码和使用github pages发布。</p>
+<p>下面是一些完成步骤和截图</p>
+<p>1.linux下使用atp-get命令安装git，利用git命令上传管理大作业代码。</p>
+<p>2.利用socket技术编写程序，server和client实现俩者信息传递</p>
+<p>3.a.下载配置hugo</p>
+<p>b.使用md语法编写网站，利用hugo生成自己的个人博客</p>
+<p>c.并部署到web服务器中</p>
+<p>加分项2</p>
+<p>将个人博客网站部署到公网，使用gihub里的githubpages发布</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-12-12</span>
+                <span>Updated on 0001-01-01</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://ffffeil.github.io/posts/first_post/" data-title="First_post"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://ffffeil.github.io/posts/first_post/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://ffffeil.github.io/posts/first_post/" data-title="First_post"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://ffffeil.github.io/posts/first_post/" data-title="First_post"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://ffffeil.github.io/posts/first_post/" data-title="First_post"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/posts/first_post/" data-title=""><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/posts/first_post/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://example.org/posts/first_post/" data-title=""><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://example.org/posts/first_post/" data-title=""><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://example.org/posts/first_post/" data-title=""><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
